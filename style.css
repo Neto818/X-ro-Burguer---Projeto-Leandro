@@ -1,0 +1,159 @@
+/* Iniciando com o "css reset" para ter uma base de manipulação previsível, "zerando" configurações padrões de navegadores*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5EBDD;
+    font-family: arial, sans-serif;
+}
+
+.cabecalho{
+    background-color: #F5EBDD;
+    padding: 20px  40px; /* superior-inferior laterais*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #241A16;
+}
+
+.logo h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #D9A441;
+}
+
+.navegador{
+    display: flex;
+    gap: 25px;
+}
+
+.navegador a{
+    text-decoration: none;
+    color: #241A16;
+    font-size: 15px;
+    transition-duration: 0.6s;
+}
+
+.navegador a:hover{
+    color: #D9A441;
+}
+
+.conta-e-sacola{
+    display: flex;
+    gap:20px;
+    align-items:center;
+}
+
+.conta-e-sacola p{
+    color:#241A16;
+}
+
+.conta-e-sacola a{
+    text-decoration: none;
+    color: #241A16;
+    font-size: 14px;
+    transition-duration: 0.6s;
+}
+
+.conta-e-sacola a:hover{
+    color: #D9A441;
+}
+
+#usuario img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: contain;
+    transition-duration: 03.s;
+}
+
+#usuario:hover img{
+    transform: scale(1.30);
+}
+
+#sacola img{
+    width: 27px;
+    height: 27px;
+    display: block;
+    object-fit: contain; /*quero que caiba na dimensão q selecionei sem estragar o ícone*/
+    transition-duration: 0.3s;
+}
+
+#sacola:hover img{
+    transform: scale(1.30);
+}
+
+
+.botao-cardapio a{
+    display: flex;
+    background-color: #D9A441;
+    color: #241A16;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.7s;
+}
+
+.botao-cardapio a:hover{
+    background-color: #F0BD59;
+}
+
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 70px 60px 70px; /*sentido horário começando pela parte superior da caixa*/
+    gap: 20px;
+    background-color: #F5EBDD;
+}
+
+.texto-apresentacao{
+    max-width: 500px;
+    flex: 1;
+}
+
+.texto-apresentacao h1{
+    font-size: 42px;
+    color: #241A16;
+    margin-bottom: 20px;
+}
+
+.texto-apresentacao p{
+    font-size: 18px;
+    color: #5C5049;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.img-apresentacao{
+    flex: 1; /*permite ocupar o restante do espaço da caixa*/
+    min-width: 0; /*não terá como encolher menos que isso*/
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.img-apresentacao img{
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    display: block;
+
+    filter: drop-shadow( 0px 30px 10px rgba(83, 52, 22, 0.7)); /*deslocamento horizontal da sombra; desloc vertical; itensidade de desfoque; rgb(---,%opacidade)*/
+    transform: scale(1.05) ; /*aumentou em 5% sem alterar dimensões da img*/
+}
