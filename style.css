@@ -1,0 +1,218 @@
+/* =========================================================
+   XÊRO BURGUER - Estilo das páginas
+   ========================================================= */
+
+/* ---------- Paleta de cores ---------- */
+:root {
+  --marrom-escuro: #241A16;
+  --creme: #F5EBDD;
+  --mostarda: #D9A441;
+  --terracota: #B85C38;
+  --marrom-couro: #7C593B;
+  --areia: #D8B982;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--creme);
+  color: var(--marrom-escuro);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--marrom-couro);
+}
+
+a {
+  color: var(--terracota);
+}
+
+/* ---------- Cabeçalho e menu ---------- */
+header {
+  background-color: var(--marrom-escuro);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  color: var(--mostarda);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--creme);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+nav a:hover {
+  color: var(--mostarda);
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+  background-color: var(--marrom-escuro);
+  color: var(--areia);
+  text-align: center;
+  padding: 20px;
+  margin-top: 48px;
+}
+
+/* =========================================================
+   CADASTRO E LOGIN (os dois usam o mesmo visual)
+   ========================================================= */
+.cadastro,
+.login {
+  max-width: 420px;
+  margin: 48px auto;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  border-top: 6px solid var(--mostarda);
+  box-shadow: 0 6px 20px rgba(36, 26, 22, 0.15);
+}
+
+.cadastro h1,
+.login h1 {
+  text-align: center;
+}
+
+.cadastro > p,
+.login > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Cada label fica numa linha, em cima do seu campo */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--areia);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--creme);
+}
+
+/* Borda muda de cor quando o campo está selecionado */
+form input:focus {
+  outline: none;
+  border-color: var(--mostarda);
+}
+
+form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  background-color: var(--terracota);
+  color: var(--creme);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--marrom-couro);
+}
+
+/* Link "Já possui conta?" / "Não possui conta?" */
+.cadastro form + p,
+.login form + p {
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   SOBRE NÓS
+   ========================================================= */
+.banner {
+  background-color: var(--marrom-couro);
+  text-align: center;
+  padding: 56px 24px;
+}
+
+.banner h1 {
+  color: var(--mostarda);
+  font-size: 2.5rem;
+}
+
+.quem-somos,
+.projeto,
+.nome,
+.tecnologias,
+.integrantes {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-left: 6px solid var(--mostarda);
+  border-radius: 8px;
+}
+
+.sobre h2 {
+  margin-bottom: 8px;
+}
+
+.sobre p {
+  margin-bottom: 8px;
+}
+
+.sobre ul {
+  padding-left: 20px;
+}
+
+.sobre li {
+  margin-bottom: 6px;
+}
+
+.sobre strong {
+  color: var(--terracota);
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .cadastro,
+  .login {
+    margin: 24px 16px;
+    padding: 24px;
+  }
+
+  .quem-somos,
+  .projeto,
+  .nome,
+  .tecnologias,
+  .integrantes {
+    margin: 20px 16px;
+    padding: 20px;
+  }
+}
