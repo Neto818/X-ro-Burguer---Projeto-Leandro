@@ -1,0 +1,316 @@
+body {
+    background-color: #1F1D1D;
+    margin: 0;
+}
+
+header div.TOPO {
+    width: 100%;
+    height: 120px;
+    background-color: #101010;
+    border-bottom: 1px orange solid;
+}
+
+header div.TOPO h1.XERO {
+    color: orange;
+    margin: 0;
+    text-align: center;
+    transform: translate(0px, 30px);
+    font-size: 31px;
+    letter-spacing: 5px;
+}
+
+header div.TOPO p {
+    color: white;
+    margin: 0px;
+    text-align: center;
+    transform: translate(0px, 30px);
+}
+
+main div.voltar button {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+
+    color: orange;
+    cursor: pointer;
+    transform: translate(250px, 50px);
+}
+
+main div.frase {
+    color: white;
+    transform: translate(250px, 60px);
+    margin: 0px;
+}
+
+main div.frase p.finalizar {
+    font-size: 40px;
+    margin: 0px;
+}
+
+main div.frase p.passo {
+    margin: 0px;
+    transform: translate(0px, 10px);
+    color: gray;
+}
+
+main div.campo {
+    width: 470px;
+    height: 450px;
+
+    background-color: #202020;
+
+    border: 1px solid #383838;
+    border-radius: 15px;
+
+    padding: 80px;
+    width: 30%;
+    transform: translate(250px, 100px);
+}
+
+main div.campo p.um {
+    transform: translate(-50px, -70px);
+    color: white;
+    font-size: 20px;
+}
+
+main div.campo p.dois {
+    transform: translate(-50px, -80px);
+    color: gray;
+}
+
+div.opcao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transform: translate(0px, -5px);
+    margin: -60px;
+}
+
+div.pagamento {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 20px;
+    background-color: #272727;
+    border: 1px solid #414141;
+    border-radius: 15px;
+}
+
+div.pagamento label strong {
+    color: white;
+}
+
+div.pagamento label span {
+    color: #948F8F;
+}
+
+div.pagamento:has(input:checked) { 
+    background-color: #352f24;
+    border-color: #ffad24;
+}
+
+.pagamento label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+#pix + label img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-330%);
+}
+
+#credito + label img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-140%);
+}
+
+#debito + label img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(40%);
+}
+
+#dinheiro + label img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(230%);
+}
+
+div.pagamento button {
+    width: 100%;
+    height: 73px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    background-color: #ffad24;
+    color: #111;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 400px;
+    right: 0px;
+}
+
+div.campo2 {
+    height: 200px;
+    width: 250px;
+
+    background-color: #202020;
+
+    border: 1px solid #383838;
+    border-radius: 15px;
+
+    padding: 80px;
+    position: absolute;
+    right: 200px;
+    top: 302px;
+}
+
+div.resumo h2 {
+    color: white;
+    transform: translate(-45px, -55px);
+    font-size: 20px;
+}
+
+div.resumo p {
+    color: gray;
+    transform: translate(250px, -92px);
+    font-size: 15px;
+}
+
+div.pedido h3 {
+    color: white;
+    transform: translate(10px, -80px);
+    font-size: 15px;
+}
+
+div.pedido h3 p.valor {
+    color: white;
+    transform: translate(230px, -85px);
+}
+
+div.pedido h3 p.unidades {
+    color: gray;
+    transform: translate(0px, -35px);
+    font-size: 12px;
+    margin: 0px;
+}
+
+div.pedido h3 p.hamburguer {
+    margin: 0px;
+    transform: translate(-60px, -20px);
+    font-size: 25px;
+    background-color: #30291f;
+    border-radius: 15px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+
+p.separacao1 {
+    transform: translate(-50px, -150px);
+    color: white;
+}
+
+div.precos p.subtotal {
+    transform: translate(-50px, -145px);
+    color: gray;
+    margin: 0px;
+}
+
+div.precos p.valor {
+    color: gray;
+    margin: 0px;
+    transform: translate(240px, -160px);
+}
+
+div.precos p.taxa {
+    color: gray;
+    margin: 0px;
+    transform: translate(-50px, -150px);
+}
+
+div.precos p.valortaxa {
+    color: gray;
+    margin: 0px;
+    transform: translate(248px, -165px);
+}
+
+p.separacao2 {
+    transform: translate(-50px, -160px);
+    color: white;
+    margin: 0px;
+}
+
+div.valortotal {
+    transform: translate(-50px, -140px);
+    color: white;
+}
+
+div.valortotal p.total {
+    font-size: 22px;
+    color: orange;
+    transform: translate(0px, -10px);
+}
+
+div.valortotal p.valor {
+    transform: translate(240px, -70px);
+    color: orange;
+    font-size: 30px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    border-top: 1px #383636 solid;
+    background-color: #24221f;
+}
+
+footer p.logo {
+    color: orange;
+    letter-spacing: 5px;
+    line-height: 10px;
+}
